@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <header>
+    <div class="menu">
+      <div class="logo">
+        <img src="images/logo.PNG" alt="logo" />
+        <div class="textes">
+          <h1 class="titre"><strong>LOVELY SPA</strong></h1>
+          <p class="slogan">Soins et bien-être</p>
+        </div>
+      </div>
+
+      <!-- Menu hamburger pour mobile -->
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="reservation">
+        <div class="bloc">
+          <p class="titre">
+            <span class="icone">📞</span> Réservation au :<br />33 822 36 84 ou
+            77 885 35 91
+          </p>
+        </div>
+        <div class="barre"></div>
+        <div class="bloc">
+          <p class="titre">
+            <span class="icone">📧</span> E-mail :<br />Lovelyspamassage@gmail.com
+          </p>
+        </div>
+        <div class="barre"></div>
+        <div class="bloc">
+          <p class="titre">
+            <span class="icone">🕒</span> Horaires d'ouverture :<br />Lun - Dim :
+            10h - 22h30
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation qui s'affichera juste en dessous de la réservation -->
+    <div class="navigation" id="navigation">
+      <ul>
+        <div class="nav-links">
+          <li><a href="accueil.html">ACCUEIL</a></li>
+          <li><a href="#">L'INSTITUT</a></li>
+          <li><a href="#">MASSAGES</a></li>
+          <li><a href="#">SOIN</a></li>
+          <li><a href="#">TARIFS RESERVATION</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </div>
+        <div class="social-icons">
+          <li>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </header>
+
+  <div class="Accueil">
+    <p class="Bienvenue">Bienvenue chez Lovely Spa</p>
+    <br />
+    <p class="offre">
+      Offrez-vous un moment de détente et de bien-être au cœur de Dakar.
+      Découvrez nos soins de qualité : massages, hammam, gommages, soins du
+      visage, manucures, pédicures et épilations. Chez Lovely Spa, chaque soin
+      est conçu pour vous ressourcer et vous faire sentir bien dans votre peau.
+    </p>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h2>Lovely Spa</h2>
+        <p>
+          Soins et bien-être. Massages, Hammam, Gommages, soins visage,
+          manucures, pédicures et épilations.
+        </p>
+        <p>
+          Blossom Spa | Développé par Blossom Themes. Propulsé par WordPress.
+        </p>
+      </div>
+      <div class="footer-right">
+        <a href="#" aria-label="Facebook"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="#" aria-label="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#" aria-label="Twitter"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="#" aria-label="LinkedIn"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navigation = document.getElementById("navigation");
+
+    toggle.addEventListener("click", () => {
+      navigation.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
